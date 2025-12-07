@@ -25,7 +25,16 @@ width:100%;max-width:920px;background:var(--card);border-radius:var(--radius);bo
 }
 
 header{display:flex;align-items:center;gap:16px}
-.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+
+/* LOGO */
+.logo-img{
+width:56px;
+height:56px;
+border-radius:12px;
+object-fit:cover;
+box-shadow:0 3px 6px rgba(0,0,0,0.15);
+}
+
 h1{margin:0;font-size:20px}
 p.desc{margin:6px 0 0;color:var(--muted);font-size:14px}
 
@@ -38,16 +47,20 @@ background:linear-gradient(180deg,rgba(59,130,246,0.08),rgba(96,165,250,0.03));c
 a.btn:hover{transform:translateY(-4px);box-shadow:0 10px 20px rgba(59,130,246,0.08)}
 a.btn small{display:block;color:var(--muted);font-weight:500;margin-top:6px;font-size:12px}
 
-footer{margin-top:18px;text-align:right;color:var(--muted);font-size:13px}
-
-@media (max-width:420px){.card{padding:18px}.logo{width:48px;height:48px}}
+@media (max-width:420px){
+.card{padding:18px}
+.logo-img{width:48px;height:48px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 <main class="card" role="main">
+
 <header>
-<div class="logo">AF</div>
+<!-- LOGO SEKOLAH -->
+<img class="logo-img" src="https://raw.githubusercontent.com/alfalahalmakky91/absensi/main/Logo%20SMP.png" alt="Logo SMP Plus Al-Falah Al-Makky">
+
 <div>
 <h1>Menu Presensi — SMP Plus Al-Falah Al-Makky</h1>
 <p class="desc">Klik tombol di bawah untuk membuka halaman absensi masing-masing kelas.</p>
