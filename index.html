@@ -1,71 +1,25 @@
 <!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Menu Presensi — SMP Plus Al-Falah Al-Makky</title>
-<meta name="description" content="Halaman ringkas berisi tautan ke halaman pengisian data kehadiran kelas." />
-
-<style>
-:root{
---bg:#f1f6ff;
---card:#ffffff;
---accent:#3b82f6;
---accent-2:#60a5fa;
---muted:#6b7280;
---radius:14px;
-font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#e6f0ff);}
-.wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:28px}
-
-.card{
-width:100%;max-width:920px;background:var(--card);border-radius:var(--radius);box-shadow:0 10px 30px rgba(15,23,42,0.08);padding:28px;
-}
-
-header{display:flex;align-items:center;gap:16px}
-
-/* LOGO */
-.logo-img{
-width:56px;
-height:56px;
-border-radius:12px;
-object-fit:cover;
-box-shadow:0 3px 6px rgba(0,0,0,0.15);
-}
-
-h1{margin:0;font-size:20px}
-p.desc{margin:6px 0 0;color:var(--muted);font-size:14px}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
-
-a.btn{
-display:block;padding:14px;border-radius:12px;text-decoration:none;font-weight:600;text-align:center;border:1px solid rgba(59,130,246,0.12);
-background:linear-gradient(180deg,rgba(59,130,246,0.08),rgba(96,165,250,0.03));color:var(--accent);transition:transform .12s ease,box-shadow .12s ease;
-}
 a.btn:hover{transform:translateY(-4px);box-shadow:0 10px 20px rgba(59,130,246,0.08)}
 a.btn small{display:block;color:var(--muted);font-weight:500;margin-top:6px;font-size:12px}
 
-@media (max-width:420px){
-.card{padding:18px}
-.logo-img{width:48px;height:48px}
-}
+
+footer{margin-top:18px;text-align:right;color:var(--muted);font-size:13px}
+
+
+@media (max-width:420px){.card{padding:18px}.logo{width:48px;height:48px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <main class="card" role="main">
-
 <header>
-<!-- LOGO SEKOLAH -->
-<img class="logo-img" src="https://raw.githubusercontent.com/alfalahalmakky91/absensi/main/Logo%20SMP.png" alt="Logo SMP Plus Al-Falah Al-Makky">
-
+<div class="logo">AF</div>
 <div>
 <h1>Menu Presensi — SMP Plus Al-Falah Al-Makky</h1>
-<p class="desc">Klik tombol di bawah untuk membuka halaman absensi masing-masing kelas.</p>
+<p class="desc">Klik tombol di bawah untuk membuka halaman absensi masing‑masing kelas. (Membuka di tab baru)</p>
 </div>
 </header>
+
 
 <section class="grid" aria-label="Tautan absensi kelas">
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-A/">
@@ -73,30 +27,36 @@ Kelas 7A
 <small>Masukkan Data Kehadiran</small>
 </a>
 
+
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-B/">
 Kelas 7B
 <small>Masukkan Data Kehadiran</small>
 </a>
+
 
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-C/">
 Kelas 7C
 <small>Masukkan Data Kehadiran</small>
 </a>
 
+
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-8-A/">
 Kelas 8A
 <small>Masukkan Data Kehadiran</small>
 </a>
+
 
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-8-B/">
 Kelas 8B
 <small>Masukkan Data Kehadiran</small>
 </a>
 
+
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-9-A/">
 Kelas 9A
 <small>Masukkan Data Kehadiran</small>
 </a>
+
 
 <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-9-B/">
 Kelas 9B
@@ -106,5 +66,19 @@ Kelas 9B
 
 </main>
 </div>
+<div class="card" style="background:#000; color:#fff;">
+<div class="logo-container">
+<img src="https://raw.githubusercontent.com/alfalahalmakky91/absensi/main/LOGO%202%20-%20SMA.JPG" alt="Logo SMA">
+</div>
+<h2>Menu Presensi SMA Plus</h2>
+<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-10-A/">Kelas 10-A<small>Masukkan Data Kehadiran</small></a>
+<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-10-B/">Kelas 10-B<small>Masukkan Data Kehadiran</small></a>
+<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-11-A/">Kelas 11-A<small>Masukkan Data Kehadiran</small></a>
+<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-11-B/">Kelas 11-B<small>Masukkan Data Kehadiran</small></a>
+<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-12-A/">Kelas 12-A<small>Masukkan Data Kehadiran</small></a>
+<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-12-B/">Kelas 12-B<small>Masukkan Data Kehadiran</small></a>
+</div>
+
+
 </body>
 </html>
