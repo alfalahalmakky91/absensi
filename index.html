@@ -8,7 +8,7 @@
 <style>
 :root {
   --bg: #f8f9fa;
-  --card-smp: linear-gradient(135deg, #88aeff, #dce7ff);
+  --card-smp: linear-gradient(135deg, #dce7ff, #88aeff);
   --card-sma: linear-gradient(135deg, #000000, #50585e, #000000);;
   --text: #222;
   --muted: #6c757d;
@@ -41,6 +41,11 @@ body {
   color: #001930;
 }
 
+.card.smp a.btn {
+  background: var(--primary);
+  color: #fff;
+}
+  
 .card.smp a.btn small {
   color: #001930;
 }
@@ -52,7 +57,7 @@ body {
 }
 
 .card.sma a.btn {
-  background: var(--card-sma);
+  background: linear-gradient(135deg, #008cff, #00eaff);
   color: #fff;
 }
 
