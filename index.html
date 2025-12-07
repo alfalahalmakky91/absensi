@@ -1,71 +1,143 @@
 <!doctype html>
-text-align: right;
-color: var(--muted);
-font-size: 13px;
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu Presensi</title>
+
+<style>
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #222;
+  --muted: #6c757d;
+  --primary: #3b82f6;
 }
 
+body {
+  background: var(--bg);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap { max-width: 760px; width: 100%; }
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin-bottom: 28px;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+a.btn {
+  padding: 14px;
+  background: var(--primary);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+a.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(59,130,246,0.2);
+}
+
+a.btn small {
+  display: block;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 18px;
+  text-align: right;
+  color: var(--muted);
+  font-size: 13px;
+}
 
 @media (max-width: 420px) {
-.card { padding: 18px; }
-.logo { width: 48px; height: 48px; }
+  .card { padding: 18px; }
+  .logo { width: 48px; height: 48px; }
 }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-
 <!-- ====== CARD SMP ====== -->
 <main class="card" role="main">
 <header style="display:flex; align-items:center; gap:16px;">
-<div class="logo">AF</div>
-<div>
-<h1>Menu Presensi — SMP Plus Al-Falah Al-Makky</h1>
-<p class="desc">Klik tombol di bawah untuk membuka halaman absensi masing‑masing kelas.</p>
-</div>
+  <div class="logo">AF</div>
+  <div>
+    <h1>Menu Presensi — SMP Plus Al-Falah Al-Makky</h1>
+    <p class="desc">Klik tombol di bawah untuk membuka halaman absensi masing‑masing kelas.</p>
+  </div>
 </header>
 
-
 <section class="grid" aria-label="Tautan absensi kelas">
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-A/">Kelas 7A<small>Masukkan Data Kehadiran</small></a>
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-B/">Kelas 7B<small>Masukkan Data Kehadiran</small></a>
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-C/">Kelas 7C<small>Masukkan Data Kehadiran</small></a>
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-8-A/">Kelas 8A<small>Masukkan Data Kehadiran</small></a>
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-8-B/">Kelas 8B<small>Masukkan Data Kehadiran</small></a>
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-9-A/">Kelas 9A<small>Masukkan Data Kehadiran</small></a>
-<a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-9-B/">Kelas 9B<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-A/">Kelas 7A<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-B/">Kelas 7B<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-7-C/">Kelas 7C<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-8-A/">Kelas 8A<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-8-B/">Kelas 8B<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-9-A/">Kelas 9A<small>Masukkan Data Kehadiran</small></a>
+  <a class="btn" href="https://alfalahalmakky91.github.io/absensi-SMP-Plus-9-B/">Kelas 9B<small>Masukkan Data Kehadiran</small></a>
 </section>
 </main>
-
-
 
 
 <!-- ====== CARD SMA ====== -->
 <main class="card" role="main" style="background:#000; color:#fff;">
 <header style="display:flex; align-items:center; gap:16px;">
-<div class="logo" style="background:none; padding:0;">
-<img src="https://raw.githubusercontent.com/alfalahalmakky91/absensi/main/LOGO%202%20-%20SMA.JPG" alt="Logo SMA" style="width:56px; height:56px; border-radius:12px; object-fit:cover;">
-</div>
+  <div class="logo" style="background:none; padding:0;">
+    <img src="https://raw.githubusercontent.com/alfalahalmakky91/absensi/main/LOGO%202%20-%20SMA.JPG" alt="Logo SMA" style="width:56px; height:56px; border-radius:12px; object-fit:cover;">
+  </div>
 
-
-<div>
-<h1 style="color:#fff;">Menu Presensi — SMA Plus Al-Falah Al-Makky</h1>
-<p class="desc" style="color:#ccc;">Klik tombol di bawah untuk membuka halaman absensi masing-masing kelas.</p>
-</div>
+  <div>
+    <h1 style="color:#fff;">Menu Presensi — SMA Plus Al-Falah Al-Makky</h1>
+    <p class="desc" style="color:#ccc;">Klik tombol di bawah untuk membuka halaman absensi masing-masing kelas.</p>
+  </div>
 </header>
 
-
 <section class="grid">
-<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-10-A/">Kelas 10-A<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
-<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-10-B/">Kelas 10-B<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
-<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-11-A/">Kelas 11-A<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
-<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-11-B/">Kelas 11-B<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
-<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-12-A/">Kelas 12-A<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
-<a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-12-B/">Kelas 12-B<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
+  <a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-10-A/">Kelas 10-A<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
+  <a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-10-B/">Kelas 10-B<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
+  <a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-11-A/">Kelas 11-A<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
+  <a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-11-B/">Kelas 11-B<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
+  <a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-12-A/">Kelas 12-A<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
+  <a class="btn" style="background:#00ffff; color:#000;" href="https://alfalahalmakky91.github.io/absensi-SMA-Plus-12-B/">Kelas 12-B<small style="color:#003333;">Masukkan Data Kehadiran</small></a>
 </section>
 </main>
 
-
 </div>
 </body>
+<!-- fixed structure inserted -->
 </html>
